@@ -18,3 +18,5 @@ size_mr_data <- data.frame(
 
 ggplot(data = size_mr_data, aes(x= body_mass, y = metabolic_rate)) +
   geom_point()
+ggplot(data = size_mr_data, aes(x = log(body_mass), y= log(metabolic_rate))) +
+  geom_point()
