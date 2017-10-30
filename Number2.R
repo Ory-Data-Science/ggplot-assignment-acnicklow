@@ -20,3 +20,7 @@ ggplot(data = size_mr_data, aes(x= body_mass, y = metabolic_rate)) +
   geom_point()
 ggplot(data = size_mr_data, aes(x = log(body_mass), y= log(metabolic_rate))) +
   geom_point()
+ggplot(data = size_mr_data, aes(x = body_mass, y = metabolic_rate)) +
+  scale_x_log10() +
+  scale_y_log10() +
+  geom_point(size = 5)
